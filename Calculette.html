@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Mission n </title>
+
+</head>
+
+<body>
+<script type="text/javascript">
+	function calculatrice(){
+while (isNaN(nombre1 = prompt("Quel est le 1er nombre ?", "Votre premier nombre"))){
+        alert("Merci de rentrer un nombre");
+        nombre1;
+}
+if(nombre1 == null){
+    alert("Merci de votre visite.");
+        return;
+}
+while(isNaN(nombre2 = prompt("Quel est le 2ème nombre ?", "Votre deuxième nombre"))){
+    alert("Merci de rentrer un nombre");
+    nombre2;
+}
+if(nombre2 == null){
+    alert("Merci de votre visite.");
+        return;
+}
+var calcule = prompt("Quel calcule doit être effectué ?", "+, -, *, /");
+switch (calcule){
+        case "+":
+        var result = parseFloat(nombre1)+parseFloat(nombre2);
+        alert(nombre1 + " " + "+" + " " + nombre2 + " " + "=" + "" + result);
+    break;
+     
+    case "-":
+        var résultat = nombre1-nombre2;
+        alert(nombre1 + " " + "-" + " " + nombre2 + " " + "=" + " " + result);
+    break;
+     
+    case "*":
+    var résultat = nombre1*nombre2;
+        alert(nombre1 + " " + "*" + " " + nombre2 + " " + "=" + " " + result);
+    break;
+     
+    case "/":
+    var résultat = nombre1/nombre2;
+        alert(nombre1 + " " + "/" + " " + nombre2 + " " + "=" + " " + result);
+    break;
+         
+    case null:
+    alert("Merci de votre visite.");
+    break;
+     
+    default:
+    alert("ATTENTION ! Merci de bien écrire le type de calcule comme indiqué");
+    var calcule = prompt("Quel calcule doit être effectué ?", "+, -, *, /");
+    break;
+}
+}
+var demande = confirm("Voulez vous utiliser la calculatrice ?");
+if (demande == true){
+    calculatrice();
+    }else{
+        if (demande == false){
+            alert("Merci de votre visite");
+}
+}
+</script>
+
+</body>
+</html>
